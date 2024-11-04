@@ -1,0 +1,323 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-) My name is Sam!",
+        "Hello, thanks for visiting. My name is Sam!",
+        "Hi there, My name is Sam!. What can I do for you?",
+        "Hi there, My name is Sam! How can I help?"
+      ]
+    },
+    {  
+      "tag": "show_image",  
+      "patterns": [  
+          "Show me an image",  
+          "Can you display an image?",  
+          "I want to see an image",  
+          "Display an image"  
+      ],  
+      "responses": [  
+          {  
+              "text": "Here is the image you requested!",  
+              "image_url": "data:image/jpeg;base64,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"  
+
+          }  
+      ]  
+  },
+  {
+      "tag": "image",
+      "patterns": [
+        "red dress"
+        
+        
+      ],
+      "responses": [  
+          {  
+              "text": "Here is the image you requested!",  
+              "image_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fred%2520dress%2F&psig=AOvVaw2ErBvOYUdmVTj2vQ7YvO3y&ust=1727182785356000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJDslLmQ2YgDFQAAAAAdAAAAABAJ"
+          }  
+      ] 
+    },
+    {
+      "tag": "personal",
+      "patterns": [
+        "How are you?",
+        "How are you doing?",
+        "How is your day?"
+      ],
+      "responses": [
+        "I'm good, all's good, thanks. How about you?"
+      ]
+    },
+            {
+      "tag": "user response",
+      "patterns": [
+        "I'm good",
+        "Im good",
+        "Im doing good",
+        "I am good",
+        "I am okay"
+      ],
+      "responses": [
+        "Great to hear you are doing good."
+      ]
+    },   
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting. Hope I was able to help!",
+        "Have a nice day. Hope I was able to help!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!", "thx", "thnks"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?",
+        "What do you offer?",
+        "What can I buy?"
+      ],
+      "responses": [
+        "Search your preference in our flagship store's search bar to see all available products. "
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Cash?",
+        "Are you cash only?",
+        "What are your payment methods?",
+        "How do I pay?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Cash"
+      ]
+    },
+    {
+      "tag": "track",
+      "patterns": [
+        "How can I track my order", 
+        "I want to track my order", 
+        "Can I track my order", 
+        "Track order"
+      ],
+      "responses": [
+        "Visit the order page, click on the specific order, select 'track my order', and check the status"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "Please Tell me about my delivery",
+        "When do I get my delivery?",
+        "Why is my order not delivered yet"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days. Please bear with us!",
+        "Shipping takes 2-4 days.  Please bear with us!"
+      ]
+    },
+    {
+      "tag": "confirm",
+      "patterns": [
+        "My payment was processed successfully but I didn't get any order confirmation. What should I do?",
+        "Payment was completed but no confirmation",
+        "Order was not confirmed",
+        "Money deducted but order is not confirmed"
+      ],
+      "responses": [
+        "Daraz sends you an Email & SMS upon confirmation of your order. If it requires manual confirmation, our team will contact you within 24 hours after order placement. Delay in confirmation SMS may occur due to network error, you may receive it with a delay.",
+        "It takes upto 24 hours for confirmation, please bear with us! Type Need more help for more assistance. "
+      ]
+    },
+    {
+      "tag": "delay",
+      "patterns": [
+        "Why is my order delayed? ",
+        "Did my order get delayed?",
+        "Why is my order not delivered yet?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "We are really sorry if there has been a delay in your order! If your order is within delivery period, We recommend you to please wait during this period since our Delivery Heroes make 3 attempts to deliver your order!",
+        "If your order is past up to 3 days after delivery period, There may be logistic issues causing a delay in delivery. Please type 'Common reasons for delivery delay' to know more about this.",
+        "We appreciate if you could wait for your items as most orders are delivered successfully within this period.",
+        "If your order is past more than 3 days, Since there may be unexpected issues causing delivery delays, you can click on 'Need more Help' for further assistance."
+      ]
+    },
+    {
+      "tag": "reasons",
+      "patterns": [
+        "Common reasons for delivery delay",
+        "common reasons for delivery delay",
+        "reasons for delay",
+        "delivery delay"
+      ],
+      "responses": [
+        "Reasons include Seller Sourcing Issues, Courier Issues, Cross Border shipment delay, Wrong Address or Phone Number, and Unavailability of Customer. "
+      ]
+    },
+    {
+      "tag": "more",
+      "patterns": [
+        "Need more help",
+        "help me more",
+        "can I talk to an agent",
+        "can I call customer service",
+        "customer support number",
+        "how to contact customer service",
+        "customer service number",
+        "contact number for help",
+        "helpline number",
+        "How to become a seller",
+        "How to contact a seller"
+      ],
+      "responses": [
+        "Contact us for further information here: Phone: 021-111-132729. Timings are from 09:00 AM to 05:00 PM from Monday to Saturday."
+      ]
+    },
+    {
+      "tag": "cancel",
+      "patterns": [
+        "Can I cancel my order?",
+        "Why is my order cancelled?",
+        "How do I can cancel my order",
+        "Can I cancel an order"
+      ],
+      "responses": [
+        "Order can only be cancelled within 7 days of placement. Digital goods do not qualify for refund.",
+        "Visit my orders page to check status of specific orders."
+      ]
+    },
+    {
+      "tag": "refund",
+      "patterns": [
+        "Can I refund an item.",
+        "I want to refund an item",
+        "can I refund my order",
+        "Are refunds available"
+      ],
+      "responses": [
+        "Refund can only be issued within 7 days of placement. Digital goods do not qualify for refund.",
+        "Visit my orders page to check for specific orders."
+      ]
+    },
+    {
+      "tag": "refund status",
+      "patterns": [
+        "Why is the status Refunded when it's not credited?",
+        "No refund even though status is refunded",
+        "No refund when status says refunded",
+        "I did not receive my refund money",
+        "Refund money not received"
+      ],
+      "responses": [
+        "Please be patient as refunds take upto 30 days to receive into bank. "
+      ]
+    },
+    {
+      "tag": "refund",
+      "patterns": [
+        "Can I refund an item.",
+        "I want to refund an item",
+        "can I refund my order",
+        "Are refunds available"
+      ],
+      "responses": [
+        "Refund can only be issued within 7 days of placement. Digital goods do not qualify for refund.",
+        "Visit my orders page to check for specific orders."
+      ]
+    },
+    {
+      "tag": "return",
+      "patterns": [
+        "How long do return items take",
+        "When will my items be returned",
+        "When can I get a refund for return items?",
+        "Are refunds available for return?"
+      ],
+      "responses": [
+        "Return takes 6 to 10 business days. There are 2 parts to the return process. In the first part, we check the items received from you to verify the issue highlighted in your return claim. Once we've verified and accepted your return, we initiate the refund process which takes 1 business day for Daraz wallet and 2-10 business days for bank or card. "
+      ]
+    },
+    {
+      "tag": "withdraw refunds",
+      "patterns": [
+        "How to withdraw refunds from wallet?",
+        "Withdraw funds",
+        "Can I withdraw refunds"
+      ],
+      "responses": [
+        "Withdrawing refunds from your wallet is very easy. Please follow the steps below: Step 1: Click on the 'Wallet' icon on the top right corner of the Daraz App, or click here. Step 2: Click on the 'Balance Details' Icon. Step 3: Click on 'Withdraw' button. Step 4: Enter your bank account details and click 'Withdraw'. Step 5: You will receive a verification email, click confirm to initiate your withdrawal request."
+      ]
+    },
+    {
+      "tag": "order status",
+      "patterns": [
+        "What is my order status",
+        "I want to know my return status",
+        "How to return status"
+      ],
+      "responses": [
+        "Please visit the My Orders page for a list of your confirmed orders."
+      ]
+    },
+    {
+      "tag": "use voucher",
+      "patterns": [
+        "How to use a voucher?",
+        "Can I use a voucher?",
+        "How to use a voucher?"
+      ],
+      "responses": [
+        "You can add a voucher by clicking on My Cart > Check Out > Enter Voucher Code > APPLY. "
+      ]
+    },
+        {
+      "tag": "profile info",
+      "patterns": [
+        "How can I change my profile information",
+        "I want to change my password",
+        "I want to change my phone number",
+        "I want to change my address",
+        "I want to Reset my password",
+        "I want to delete my account",
+        "delete my account"
+      ],
+      "responses": [
+        "You can easily add or change your account details by following the steps below: Step 1: Click on 'Account', Step 2: Click on 'Manage my account' from the icon, Step 3: You change or edit your name, address, email address, mobile number, etc., Step 4: Fill in the required details, and click on Save. Note: You can also change your delivery address from the Checkout page before proceeding to pay."
+      ]
+    },
+        {
+      "tag": "mobile app",
+      "patterns": [
+        "Can I download a mobile app for this?",
+        "Mobile app",
+        "Download mobile app"
+      ],
+      "responses": [
+        "You can download the Daraz Mobile App from both IOS App Store, and Google Play Store. "
+      ]
+    }  
+  ]
+}
+
